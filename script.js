@@ -1,25 +1,60 @@
 console.log('hello world');
-//crate a varible 
-const cardcontainer = document.querySelector ("#card");
-console.log(cardcontainer);
+let harTrykt = false;
 
-const h2title =document.createElement("h2");
-// lager en variabel i js som lager en h2 tag i htmlen
-h2title.textContent = "Adrian H";
-console.log(h2title);
+/*function generateCard() {
+    console.log("hej");
+}
+*/
+let generateCardVar = document.getElementById("card");
+console.log(generateCardVar);
+generateCardVar.addEventListener("click", function() {
+        /*
+        let card = document.getElementById("generateCard2");
+        card = !card;
+        if (card) {
+            console.log(card);
+            card.style.backgroundColor = "red";
+        } else {
+            console.log(card);
+        }
+        */
+       console.log("asdasdf");
+    }
+);
 
-//lag en variabel som henter ut variablen på jsen til htmlen
-cardcontainer.appendChild(h2title);
+function generateCard() {
 
-const contact = document.createElement("div");
-cardcontainer.appendChild(contact);
-const pdescription = document.createElement("p");
+  if (!harTrykt) {
+    harTrykt = true;
 
-pdescription.textContent = "telefon nommer: 12345678";
-console.log(pdescription);
-contact.appendChild(pdescription);
+    const cardcontainer = document.querySelector("#card");
+    console.log(cardcontainer);
 
-const email = document.createElement("p");
-email.textContent = "email:adrian.koder@gmail.com";
-console.log(email);
-contact.appendChild(email);
+    const h2title = document.createElement("h2");
+    h2title.textContent = "Adrian H";
+    console.log(h2title);
+
+    cardcontainer.appendChild(h2title);
+    cardcontainer.style.backgroundImage = "url('maling.jpg')";
+
+    const contact = document.createElement("div");
+    cardcontainer.appendChild(contact);
+
+    const pdescription = document.createElement("p");
+    pdescription.textContent = "telefonnummer: 12345678";
+    console.log(pdescription);
+    contact.appendChild(pdescription);
+
+    const email = document.createElement("p");
+    email.textContent = "email: adrian.koder@gmail.com";
+    console.log(email);
+    contact.appendChild(email);
+  }
+
+
+
+
+}
+
+// create a variable
+
