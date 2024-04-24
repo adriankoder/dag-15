@@ -49,12 +49,4 @@ function generateCard() {
     email.textContent = "email: adrian.koder@gmail.com";
     console.log(email);
     contact.appendChild(email);
-  }
-
-
-
-
-}
-
-// create a variable
-
+  }}
