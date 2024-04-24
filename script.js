@@ -5,9 +5,9 @@ let harTrykt = false;
     console.log("hej");
 }
 */
-let generateCardVar = document.getElementById("card");
-console.log(generateCardVar);
-generateCardVar.addEventListener("click", function() {
+let generateCardlet = document.getElementById("card");
+console.log(generateCardlet);
+generateCardlet.addEventListener("click", function() {
         /*
         let card = document.getElementById("generateCard2");
         card = !card;
